@@ -1,0 +1,7 @@
+A few bash aliases to help with controlling a chroot.
+
+I use chroot to isolate servers that I might need locally for development. This way if I'm experimenting with something, it doesn't muddy the waters of my real system.
+
+Usage:
+
+$ source chroot_aliases

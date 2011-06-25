@@ -1,0 +1,4 @@
+alias vm-server-init="schroot -b -n vm-server -c natty"
+alias vm-server-shell="vm-server-init 2>/dev/null; schroot -r -c vm-server -u root"
+alias vm-server-start="CWD=\`pwd\`; cd /; vm-server-shell -- /etc/init.d/rc 2; cd \$CWD"
+alias vm-server-stop="schroot -e -c vm-server 2>/dev/null"
